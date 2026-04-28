@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DataTable from '@/components/DataTable';
 
-const API_BASE = '${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/modules/volunteers';
+const API_BASE = `${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/modules/volunteers`;
 
 export default function VolunteersPage() {
   const [data, setData] = useState([]);

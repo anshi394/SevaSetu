@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { MapPin, User, Clock, CheckCircle2, AlertCircle, RefreshCw, Trash2 } from 'lucide-react';
 
-const API_BASE = '${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/modules/tasks';
-const REASSIGN_URL = '${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/modules/reassign';
+const API_BASE = `${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/modules/tasks`;
+const REASSIGN_URL = `${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/modules/reassign`;
 
 export default function TasksPage() {
   const [data, setData] = useState<any[]>([]);
