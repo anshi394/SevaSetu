@@ -18,7 +18,7 @@ export default function VolunteerDashboard() {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get('http://127.0.0.1:5000/api/volunteer/tasks');
+      const res = await axios.get('${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/volunteer/tasks');
       setTasks(res.data);
     } catch (err) {
       console.error(err);
@@ -31,7 +31,7 @@ export default function VolunteerDashboard() {
     setUpdating(taskId);
     try {
       const resourcesUsed = [{ type, quantity: usedResources[taskId] || 0 }];
-      await axios.post(`http://127.0.0.1:5000/api/volunteer/tasks/${taskId}/complete`, { resourcesUsed });
+      await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/volunteer/tasks/${taskId}/complete`, { resourcesUsed });
       fetchTasks();
     } catch (err) {
       alert('Failed to complete task');

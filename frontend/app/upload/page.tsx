@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { UploadCloud, CheckCircle, AlertCircle, FileText, RefreshCw } from 'lucide-react';
 
-const API_BASE = 'http://127.0.0.1:5000/api/upload';
-const MODULES_BASE = 'http://127.0.0.1:5000/api/modules';
+const API_BASE = '${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/upload';
+const MODULES_BASE = '${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/modules';
 
 const uploadSections = [
   { id: 'needs', title: 'Needs / Beneficiaries', description: 'Upload offline survey data or beneficiary reports.' },

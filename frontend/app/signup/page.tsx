@@ -14,7 +14,7 @@ export default function AdminSignup() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://127.0.0.1:5000/api/auth/admin/signup', form);
+      const res = await axios.post('${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/auth/admin/signup', form);
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('role', 'admin');
       localStorage.setItem('user', JSON.stringify(res.data.admin));
