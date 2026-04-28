@@ -1,0 +1,11 @@
+need_id,state,district,city,need_type,people_count,severity,description
+N001,Maharashtra,Pune,Pune,food,600,high,Massive food shortage due to flooding
+N002,Maharashtra,Pune,Pune,medical,50,medium,Basic first aid needed
+N003,Maharashtra,Mumbai,Mumbai,shelter,50,high,Temporary shelter needed for displaced families
+N004,Maharashtra,Mumbai,Mumbai,water,10,low,Drinking water supply requested
+N005,Maharashtra,Nagpur,Nagpur,rescue,20,high,People stranded on rooftops
+N006,Maharashtra,Nagpur,Nagpur,food,15,low,Food packets needed
+N007,Maharashtra,Pune,Pune,shelter,40,medium,Tents required
+N008,Maharashtra,Mumbai,Mumbai,medical,120,high,Outbreak of waterborne diseases
+N009,Maharashtra,Nagpur,Nagpur,medical,5,low,Minor injuries reported
+N010,Maharashtra,Pune,Pune,water,30,medium,Clean water needed

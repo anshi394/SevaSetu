@@ -1,0 +1,6 @@
+volunteer_id,name,email,skills,state,district,city
+V001,Amit Kumar,amit@example.com,"food, logistics",Maharashtra,Mumbai,Mumbai
+V002,Priya Singh,priya@example.com,"shelter, coordination",Maharashtra,Pune,Pune
+V003,Rahul Verma,rahul@example.com,"medical, driving",Delhi,Delhi,Delhi
+V004,Sneha Rao,sneha@example.com,"water, sanitation",Karnataka,Bangalore,Bangalore
+V005,Vikram Shah,vikram@example.com,"medical, security",Gujarat,Ahmedabad,Ahmedabad

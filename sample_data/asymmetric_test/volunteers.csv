@@ -1,0 +1,6 @@
+volunteer_id,name,phone,email,state,district,city,skills
+V001,Rahul Sharma,9876543210,rahul@example.com,Maharashtra,Pune,Pune,"food, medical"
+V002,Priya Patel,8765432109,priya@example.com,Maharashtra,Mumbai,Mumbai,medical
+V003,Amit Singh,7654321098,amit@example.com,Maharashtra,Nagpur,Nagpur,rescue
+V004,Neha Gupta,6543210987,neha@example.com,Delhi,Delhi,Delhi,"education, IT"
+V005,Vikram Desai,5432109876,vikram@example.com,Maharashtra,Pune,Pune,"legal, counseling"

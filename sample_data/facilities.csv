@@ -1,0 +1,11 @@
+facility_id,type,state,city,district,capacity,occupancy
+FAC-001,clinic,Maharashtra,Mumbai,Mumbai Suburban,100,20
+FAC-002,shelter,Maharashtra,Pune,Pune,500,150
+FAC-003,school,Karnataka,Bangalore,Bangalore Urban,200,50
+FAC-004,clinic,Delhi,New Delhi,New Delhi,150,30
+FAC-005,shelter,Tamil Nadu,Chennai,Chennai,300,100
+FAC-006,clinic,Gujarat,Ahmedabad,Ahmedabad,120,40
+FAC-007,shelter,West Bengal,Kolkata,Kolkata,400,200
+FAC-008,clinic,Maharashtra,Nagpur,Nagpur,80,10
+FAC-009,shelter,Uttar Pradesh,Lucknow,Lucknow,600,300
+FAC-010,clinic,Telangana,Hyderabad,Hyderabad,250,90

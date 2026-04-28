@@ -1,0 +1,11 @@
+resource_id,type,state,city,district,quantity
+RES-001,medical,Maharashtra,Mumbai,Mumbai Suburban,1000
+RES-002,food,Maharashtra,Pune,Pune,5000
+RES-003,water,Karnataka,Bangalore,Bangalore Urban,2000
+RES-004,shelter,Delhi,New Delhi,New Delhi,500
+RES-005,medical,Tamil Nadu,Chennai,Chennai,1200
+RES-006,food,Gujarat,Ahmedabad,Ahmedabad,3000
+RES-007,water,West Bengal,Kolkata,Kolkata,1500
+RES-008,medical,Maharashtra,Nagpur,Nagpur,800
+RES-009,shelter,Uttar Pradesh,Lucknow,Lucknow,2500
+RES-010,food,Telangana,Hyderabad,Hyderabad,4000

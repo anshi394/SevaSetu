@@ -1,0 +1,6 @@
+resource_id,type,quantity,state,district,city
+R001,food,1000,Maharashtra,Mumbai,Mumbai
+R002,medical,500,Delhi,Delhi,Delhi
+R003,water,2000,Karnataka,Bangalore,Bangalore
+R004,food,100,Maharashtra,Pune,Pune
+R005,medical,10,Gujarat,Ahmedabad,Ahmedabad

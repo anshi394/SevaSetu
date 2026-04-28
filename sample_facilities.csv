@@ -1,0 +1,4 @@
+facility_id,name,type,capacity,occupancy,state,district,city
+F001,Mumbai Shelter,shelter,100,20,Maharashtra,Mumbai,Mumbai
+F002,Delhi Clinic,medical,50,10,Delhi,Delhi,Delhi
+F003,Bangalore Hub,water,200,0,Karnataka,Bangalore,Bangalore

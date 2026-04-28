@@ -1,0 +1,4 @@
+facility_id,name,type,state,district,city,capacity,status
+F001,Pune General Hospital,medical,Maharashtra,Pune,Pune,100,active
+F002,Mumbai Relief Camp,shelter,Maharashtra,Mumbai,Mumbai,200,active
+F003,Nagpur Supply Hub,warehouse,Maharashtra,Nagpur,Nagpur,500,active

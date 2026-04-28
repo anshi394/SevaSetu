@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+.next/
+dist/
+build/
+
+# Environment files (NEVER push these)
+.env
+.env.local
+.env.production
+
+# Uploaded temp files
+backend/uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug scripts
+backend/check_tasks.js
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,11 @@
+need_id,state,city,district,need_type,people_count,severity
+NEED-001,Maharashtra,Mumbai,Mumbai Suburban,medical,45,high
+NEED-002,Maharashtra,Pune,Pune,food,120,high
+NEED-003,Karnataka,Bangalore,Bangalore Urban,water,30,medium
+NEED-004,Delhi,New Delhi,New Delhi,shelter,15,low
+NEED-005,Tamil Nadu,Chennai,Chennai,medical,60,high
+NEED-006,Gujarat,Ahmedabad,Ahmedabad,food,25,medium
+NEED-007,West Bengal,Kolkata,Kolkata,water,10,low
+NEED-008,Maharashtra,Nagpur,Nagpur,medical,8,low
+NEED-009,Uttar Pradesh,Lucknow,Lucknow,shelter,200,high
+NEED-010,Telangana,Hyderabad,Hyderabad,food,50,medium

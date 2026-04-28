@@ -1,0 +1,6 @@
+need_id,need_type,people_count,severity,state,district,city
+N101,food,150,high,Maharashtra,Mumbai,Mumbai
+N102,medical,20,medium,Delhi,Delhi,Delhi
+N103,water,500,high,Karnataka,Bangalore,Bangalore
+N104,shelter,80,low,Maharashtra,Pune,Pune
+N105,medical,5,high,Gujarat,Ahmedabad,Ahmedabad
