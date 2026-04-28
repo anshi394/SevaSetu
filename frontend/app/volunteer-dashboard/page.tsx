@@ -10,15 +10,24 @@ export default function VolunteerDashboard() {
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState<string | null>(null);
   const [usedResources, setUsedResources] = useState<Record<string, number>>({});
+  const [volunteerName, setVolunteerName] = useState('');
   const router = useRouter();
 
   useEffect(() => {
+    const user = localStorage.getItem('user');
+    if (user) {
+      const userData = JSON.parse(user);
+      setVolunteerName(userData.name);
+    }
     fetchTasks();
   }, []);
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/volunteer/tasks`);
+      const token = localStorage.getItem('token');
+      const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/volunteer/tasks`, {
+          headers: { Authorization: `Bearer ${token}` }
+      });
       setTasks(res.data);
     } catch (err) {
       console.error(err);
@@ -30,8 +39,11 @@ export default function VolunteerDashboard() {
   const handleComplete = async (taskId: string, type: string) => {
     setUpdating(taskId);
     try {
+      const token = localStorage.getItem('token');
       const resourcesUsed = [{ type, quantity: usedResources[taskId] || 0 }];
-      await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/volunteer/tasks/${taskId}/complete`, { resourcesUsed });
+      await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000'}/api/volunteer/tasks/${taskId}/complete`, { resourcesUsed }, {
+          headers: { Authorization: `Bearer ${token}` }
+      });
       fetchTasks();
     } catch (err) {
       alert('Failed to complete task');
@@ -51,7 +63,7 @@ export default function VolunteerDashboard() {
     <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '40px 20px' }}>
       <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
         <div>
-          <h1 style={{ fontSize: '32px', fontWeight: 800 }}>Volunteer Workspace</h1>
+          <h1 style={{ fontSize: '32px', fontWeight: 800 }}>Welcome, {volunteerName || 'Volunteer'}</h1>
           <p style={{ color: 'var(--secondary)' }}>Manage your assigned tasks and update resource usage</p>
         </div>
         <button onClick={handleLogout} className="btn" style={{ background: 'var(--glass)', color: 'white', display: 'flex', alignItems: 'center', gap: '8px' }}>
